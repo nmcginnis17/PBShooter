@@ -14,7 +14,7 @@ extension ViewController {
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             if(self.secondsRemaining == 0) {
                 timer.invalidate()
-                self.bps = (self.shots/20)
+                self.bps = (self.shots/self.countDownTime)
                 self.statsLabel.text = "\(self.shots) Shots / \(self.bps) BPS"
                 self.timeLabel.text = "Guns Down!\nBarrel Bags On!"
                 self.timeLabel.numberOfLines = 0
@@ -31,7 +31,7 @@ extension ViewController {
     }
     
     func restart() {
-        self.secondsRemaining = 20
+        self.secondsRemaining = self.countDownTime
         self.shots = 0
         self.bps = 0
         self.timeLabel.text = "\(self.secondsRemaining) Seconds Remaining"

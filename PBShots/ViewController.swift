@@ -15,13 +15,16 @@ class ViewController: UIViewController {
     var timeLabel: UILabel!
     var marker: UIImage!
     
+    var countDownTime = 20
     var shots = 0
     var bps = 0
-    var secondsRemaining = 20
+    var secondsRemaining = 0
     var secondsPassed = 0
     
     
     override func loadView() {
+        secondsRemaining = countDownTime
+        
         view = UIView()
         
         let bgImage = UIImageView(frame: UIScreen.main.bounds)
@@ -74,9 +77,11 @@ class ViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        shots += 1
-        statsLabel.text = "\(shots) Shots / \(bps) BPS"
-        print(shots)
+        if secondsRemaining > 0 && secondsRemaining < countDownTime {
+            shots += 1
+            statsLabel.text = "\(shots) Shots / \(bps) BPS"
+            print(shots)
+        }
     }
     
     @objc func play() {
