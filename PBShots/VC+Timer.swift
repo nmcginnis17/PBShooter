@@ -21,6 +21,11 @@ extension ViewController {
                 self.timeLabel.textAlignment = .center
                 self.startBtn.setTitle("Restart", for: .normal)
                 self.startBtn.isHidden = false
+                if self.shots > self.highscore {
+                    self.defaults.set(self.shots, forKey: "highScore")
+                    self.defaults.set(self.bps, forKey: "highestbps")
+                }
+                self.updateScore()
             } else {
                 self.secondsRemaining -= 1
                 self.secondsPassed += 1
@@ -36,6 +41,12 @@ extension ViewController {
         self.bps = 0
         self.timeLabel.text = "\(self.secondsRemaining) Seconds Remaining"
         startTimer(self.startBtn)
+    }
+    
+    func updateScore() {
+        highscore = defaults.object(forKey: "highScore") as? Int ?? 0
+        highestBPS = defaults.object(forKey: "highestbps") as? Int ?? 0
+        self.highscoreLabel.text = "Best Score:\n\(self.highscore) Shots | \(self.highestBPS) BPS"
     }
     
 }

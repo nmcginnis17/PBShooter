@@ -14,6 +14,8 @@
 		1F3C66D828D924E800296529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F3C66D728D924E800296529 /* Assets.xcassets */; };
 		1F3C66DB28D924E800296529 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3C66D928D924E800296529 /* LaunchScreen.storyboard */; };
 		1F3C66E328D9466F00296529 /* VC+Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C66E228D9466F00296529 /* VC+Timer.swift */; };
+		1F3C66E928DD55C600296529 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C66E828DD55C500296529 /* Settings.swift */; };
+		1F3C66EB28DD57C500296529 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C66EA28DD57C500296529 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		1F3C66DA28D924E800296529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F3C66DC28D924E800296529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F3C66E228D9466F00296529 /* VC+Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+Timer.swift"; sourceTree = "<group>"; };
+		1F3C66E828DD55C500296529 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		1F3C66EA28DD57C500296529 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +65,9 @@
 				1F3C66CE28D924E700296529 /* AppDelegate.swift */,
 				1F3C66D028D924E700296529 /* SceneDelegate.swift */,
 				1F3C66D228D924E700296529 /* ViewController.swift */,
+				1F3C66E828DD55C500296529 /* Settings.swift */,
 				1F3C66E228D9466F00296529 /* VC+Timer.swift */,
+				1F3C66EA28DD57C500296529 /* CollectionViewCell.swift */,
 				1F3C66D428D924E700296529 /* Main.storyboard */,
 				1F3C66D728D924E800296529 /* Assets.xcassets */,
 				1F3C66D928D924E800296529 /* LaunchScreen.storyboard */,
@@ -143,8 +149,10 @@
 			files = (
 				1F3C66D328D924E700296529 /* ViewController.swift in Sources */,
 				1F3C66CF28D924E700296529 /* AppDelegate.swift in Sources */,
+				1F3C66EB28DD57C500296529 /* CollectionViewCell.swift in Sources */,
 				1F3C66E328D9466F00296529 /* VC+Timer.swift in Sources */,
 				1F3C66D128D924E700296529 /* SceneDelegate.swift in Sources */,
+				1F3C66E928DD55C600296529 /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
